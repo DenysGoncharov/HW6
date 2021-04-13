@@ -15,7 +15,7 @@ namespace Melody
             {
                 if (notes[i].Pause == false)
                     Console.Beep(notes[i].Frequency, notes[i].Duration);
-                else Console.Beep(0, notes[i].Duration);
+                else Console.Beep(37, notes[i].Duration);
             }
         }
     }

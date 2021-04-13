@@ -13,8 +13,11 @@ namespace Melody
         {
             
             Note[] music = new Note[melody.Length];
-          
-            
+
+            for (int i = 0; i < melody.Length; i++)
+            {
+                music[i] = new Note();
+            }
             for (int i = 0; i < melody.Length; i++)
             {
                 switch (melody[i])

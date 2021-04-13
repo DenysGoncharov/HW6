@@ -13,8 +13,13 @@ namespace Melody
         int duration;
         bool pause;
         public bool Pause { set; get; }
-        public int Frequency { get;}
-        public int Duration { get;}
+        public int Frequency {
+            get { return frequency; }
+        }
+        public int Duration 
+            { get {return duration; } 
+        }
+        public Note (){}
        public  Note(int frequency, int duration)
         {
             this.frequency = frequency;
